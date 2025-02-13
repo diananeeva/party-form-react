@@ -1,0 +1,66 @@
+.footer {
+    position: absolute;
+    bottom:-60px;
+    width: 170%; 
+    background-color: rgba(154, 189, 144, 0.5);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+  
+.social-icons a {
+    margin: 0 5px;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+.footer-content p {
+    margin: 0 15px; 
+    font-family: "Montserrat";
+    font-size:12px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .footer {
+        border-radius: 10px;
+        margin-bottom:20px;
+    }
+   
+    .social-icons a {
+        font-size: 16px; 
+        margin: 0 5px; 
+    }
+
+    .footer-content p {
+        font-size: 14px;  
+        margin-left: 10px; 
+    }
+}
+
+  @media (max-width: 768px) {
+  
+    .social-icons a {
+      font-size: 12px; 
+    }
+  
+    .footer-content p {
+      font-size: 10px; 
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .footer-content p {
+      font-size: 12px; 
+    }
+}
+  

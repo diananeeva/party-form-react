@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+header {
+    position: absolute;
+    top: 30px; /* Преместване на навигацията надолу */ 
+    left:70px;
+    width: 60%;
+    width: 60%;
+    padding: 5px 0;
+    border-style: solid;
+    border-color: #2a2943;
+    border-width: 2px; /* По-тънка граница */
+   
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; /* Центриране на навигацията */
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    gap: 5px; /* Разстояние между бутоните */
+   
+  }
+  
+  li {
+    list-style: none;
+   
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #2a2943;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 15px;
+    
+  }
+
+ 
+/* Media query for screens smaller than 1024px (tablets) */
+@media (max-width: 1024px) {
+  header {
+    width: 80%; /* Increase width for tablets */
+    left: 50px; /* Adjust left position */
+  }
+
+  ul {
+    gap: 10px; /* Increase space between items */
+  }
+
+  li a {
+    font-size: 16px; /* Slightly larger text */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+/* Media query for screens smaller than 768px (mobile phones) */
+@media (max-width: 768px) {
+  header {
+    width: 90%; /* Increase width for mobile phones */
+    left: 20px; /* Adjust left position */
+    border-style: none;
+  }
+
+  ul {
+    gap: 15px; /* Increase space between items */
+  }
+
+  li a {
+    font-size: 18px; /* Larger text for better readability */
+    padding: 12px 25px; /* Adjust padding */
+  }
+}
+
+/* Media query for screens smaller than 480px (very small screens like phones in portrait) */
+@media (max-width: 480px) {
+  header {
+    width: 100%; /* Full width for very small screens */
+    left: 0; /* Remove left positioning */
+    top: 15px; /* Adjust top position */
+    border-style: none;
+  }
+
+  li a {
+    font-size: 20px; /* Larger text for very small screens */
+   
+  }
+}
